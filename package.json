@@ -1,0 +1,30 @@
+{
+  "name": "isotope-webhooks",
+  "version": "1.0.0",
+  "description": "a github webbooks server based on the isotope webserver (npm: isotope-dev)",
+  "main": "webhooks.js",
+  "dependencies": {
+    "isotope-dev": "^0.4.11",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:tmathmeyer/webhooks"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "webhooks",
+    "isotope"
+  ],
+  "author": "Ted Meyer (tmathmeyer@gmail.com)",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/tmathmeyer/webhooks/issues"
+  },
+  "homepage": "https://github.com/tmathmeyer/webhooks"
+}
