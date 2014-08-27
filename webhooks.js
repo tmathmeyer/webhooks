@@ -11,7 +11,12 @@ server.post("", function(response, request) {
     } else {
         server.extract_data(request, function(data) {
             data = JSON.parse(first(data));
-            listeners[data.repository.full_name](data.repository);
+            if (typeof listeners[data.repository.full_name] === 'function') {
+                listeners[data.repository.full_name](data.repository);
+            }
+            if (typeof listeners.any === 'function') {
+                listeners.any(data.repository);
+            }
         });
     }
 });
